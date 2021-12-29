@@ -1,0 +1,54 @@
+
+  
+  /* home */
+  .home {
+    background-size:cover; 
+    background-position: bottom center;
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    /*height:710px;*/
+    
+  }
+  .grid-container--home{
+   
+    padding-top:max(6rem, 20vh);
+  }
+  .d-block {
+    display: block;
+  }
+  .grid-container--home p{
+    line-height:2;
+  }
+  .explore-btn{
+    margin-top:3rem;
+  }
+  @media (min-width: 35rem) {
+    .home {
+        background-position: center center;
+        background-image: url(../assets/home/background-home-tablet.jpg);
+        /*height:900px;*/
+    }
+  }
+  @media (min-width:45rem){
+    .home {
+      background-image: url(../assets/home/background-home-desktop.jpg);
+      
+  }
+  }
+  
+  @media (min-width: 45em) {
+    
+    .grid-container--home {
+   
+      padding-bottom: max(6rem, 20vh);
+      align-items: end;
+  }
+  .grid-container--home > *:first-child {
+    grid-column: 2;
+}
+
+.grid-container--home> *:last-child {
+    grid-column: 3;
+}
+  }
+
+

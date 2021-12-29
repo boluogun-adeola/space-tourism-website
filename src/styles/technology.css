@@ -1,0 +1,117 @@
+.technology{
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+    background-size: cover;
+}
+
+
+.grid-container--technology{
+    --flow-space: 2rem;
+    grid-template-areas: 
+        'title'
+        'image'
+        'tabs'
+        'content';
+}
+.numbered-title {
+    grid-area: title;
+    padding-bottom: 1rem;
+  }
+
+.grid-container--technology >img{
+    grid-area: image;
+    max-width: 120%;
+    padding-bottom:1rem;
+}
+
+
+
+.grid-container--technology  >.technology-details {
+    grid-area: content;
+}
+.grid-container--technology>.number-indicators{
+    grid-area:tabs;
+    max-width: 50%;
+}
+.technology-details{
+    margin-top:3rem;
+    padding-inline: 1rem;
+}
+.technology-details h2{
+   padding-bottom:1rem;
+   opacity:.5;
+}
+.technology-details p{
+    line-height:2;
+    justify-content: center;
+}
+
+.portrait{
+    display:none;
+}
+@media(min-width:35rem){
+   
+}
+
+@media(min-width:35em){
+    .technology{
+        background-image:url(../assets/technology/background-technology-tablet.jpg);
+        background-position: center center;
+    }
+    .grid-container--technology{
+        
+        grid-template-areas: 
+            '.title title .'
+            '. image image .'
+            '. tabs tabs .'
+            '. content content .';
+    }
+    
+
+}
+
+@media(min-width:50em){
+    .technology{
+        background-size:cover;
+        background-image: url(../assets/technology/background-technology-desktop.jpg);
+    }
+    .grid-container--technology{
+        padding-inline:0;
+      
+        grid-template-columns: minmax(1rem, 1fr) minmax(0, 10rem) minmax(0,40rem) minmax(0, 40rem) minmax(0rem, 1fr);
+       
+        grid-template-areas:
+          '. title title title title'
+          '. tabs content image image';
+    
+
+    }
+    .number-indicators{
+        flex-direction: column;
+        --gap:2.5rem;
+        
+    }
+    
+.grid-container--technology >img{
+    justify-self: end;
+    max-width: 70%;
+
+    
+}
+    .landscape{
+        display:none;
+    }
+    .portrait{
+        display:block;
+    }
+   
+}
+
+/*@media(min-width:45rem){
+    .landscape{
+        display:none;
+    }
+    .portrait{
+        display:block;
+    }
+}
+*/
