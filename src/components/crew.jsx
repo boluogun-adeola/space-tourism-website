@@ -44,6 +44,7 @@ const Crew = () =>{
                 src={
 
                        crew[currentCrewMember].images.png } 
+                       alt={crew[currentCrewMember].name}
               />
               
               

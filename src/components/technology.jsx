@@ -16,10 +16,7 @@ const Technology = () =>{
                     <div className='number-indicators flex'>
                     {technology.map((ele,index)=>(
                          <button
-                        
-                         aria-selected="true" 
-                         
-                           key={ele.name}
+                            key={ele.name}
                            onClick={() => {
                              setCurrentTechnology(index);
                              
@@ -44,8 +41,8 @@ const Technology = () =>{
 
                     </article>
             
-                <img className='portrait' src={technology[currentTechnology].images.portrait}/>
-                <img className='landscape' src={technology[currentTechnology].images.landscape}/>
+                <img className='portrait' src={technology[currentTechnology].images.portrait} alt="space technology"/>
+                <img className='landscape' src={technology[currentTechnology].images.landscape} alt="space technology"/>
                 
             </main>
         </div>
