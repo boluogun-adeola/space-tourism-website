@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Navbar from './nav'
 
 import '../styles/home.css'
@@ -28,8 +29,8 @@ const Home = () =>{
   because we’ll give you a truly out of this world experience! </p>
                 </div>
                 <div className='explore-btn'>
-                    
-<a href="#" className="large-button uppercase ff-serif  text-dark bg-white">Explore</a>
+                <Link to = "/destination" className="large-button uppercase ff-serif  text-dark bg-white"> Explore </Link>
+
                 </div>
             
 
